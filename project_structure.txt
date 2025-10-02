@@ -1,0 +1,16 @@
+PROJECT STRUCTURE AND GOAL
+
+Goal:
+Create a realistic flight simulator in C with modular structure and aerodynamic logic.
+
+Modules:
+1. silnik.c/h - throttle, RPM, fuel mixture
+2. lot.c/h - speed, pitch, climb rate, altitude, elevator
+3. kokpit.c/h - ASCII cockpit display
+4. main.c - main loop and control handling
+
+Aerodynamic Features:
+- Lift increases with speed and affects climb rate
+- Negative lift at low speed causes descent
+- Altitude cannot go below zero
+- Stall effect: max pitch depends on speed

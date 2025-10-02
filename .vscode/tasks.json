@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build simulator",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+              "src/main.c",
+              "src/silnik.c",
+              "src/lot.c",
+              "src/kokpit.c",
+              "src/sterowanie.c",
+              "-I", "header",
+              "-o", "build/samolot.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
