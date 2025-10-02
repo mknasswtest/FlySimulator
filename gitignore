@@ -1,7 +1,8 @@
 # Ignore build artifacts
 *.exe
-/build/
-
+build/
+cov-int/
+samolot.exe
 # Ignore temporary files
 *.obj
 *.o
