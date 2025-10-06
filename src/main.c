@@ -10,13 +10,13 @@
 int main() {
     int throttle = 0;
     int elevator = 0;
-    int flaps = 100;
+    int flaps = 100.0;
     double rpm = 600;
     double speed = 0;
     double pitch = 0;
     double climb_rate = 0;
     double altitude = 0;
-    double mixture = 0.8;
+    int mixture = 0.8;
     int engine_on = 0;
 
     while (1) {

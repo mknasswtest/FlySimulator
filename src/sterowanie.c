@@ -19,7 +19,7 @@ int update_flaps(int flaps, char key) {
 }
 
 int get_flap_drag_factor(int flaps) {
-    return 100 + flaps;
+    return 100.0 + flaps;
 }
 
 double get_flap_lift_bonus(int flaps) {
