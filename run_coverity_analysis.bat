@@ -11,8 +11,11 @@ set OUTPUT_DIR="cov-int"
 REM Przejdź do katalogu projektu
 cd /d %PROJECT_PATH%
 
+REM Utwórz katalog 'build' jeśli nie istnieje
+if not exist build mkdir build
+
 REM Budowanie projektu z analizą Coverity
-%COV_PATH%\bin\cov-build.exe --dir %OUTPUT_DIR% gcc -c *.c
+%COV_PATH%\bin\cov-build.exe --dir %OUTPUT_DIR% gcc src/main.c src/silnik.c src/lot.c src/kokpit.c src/sterowanie.c -I header -o build/samolot.exe
 
 REM Spakowanie wyników analizy
 tar -czvf flysimulator.tgz %OUTPUT_DIR%
