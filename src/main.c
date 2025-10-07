@@ -6,6 +6,7 @@
 #include "lot.h"
 #include "kokpit.h"
 #include "sterowanie.h"
+#include "pclinttest.h"
 
 int main() {
     int throttle = 0;
@@ -18,6 +19,15 @@ int main() {
     double altitude = 0;
     int mixture = 0.8;
     int engine_on = 0;
+
+    r(flaps);
+    cr();
+    foo(rpm, mixture);
+    f();
+    g();
+    z(mixture, flaps);
+    w(rpm);
+    q(rpm, mixture);
 
     while (1) {
         if (_kbhit()) {

@@ -6,13 +6,14 @@
             "type": "shell",
             "command": "gcc",
             "args": [
-              "src/main.c",
-              "src/silnik.c",
-              "src/lot.c",
-              "src/kokpit.c",
-              "src/sterowanie.c",
-              "-I", "header",
-              "-o", "build/samolot.exe"
+                "src/main.c",
+                "src/silnik.c",
+                "src/lot.c",
+                "src/kokpit.c",
+                "src/sterowanie.c",
+                "src/pclinttest.c",
+                "-I", "header",
+                "-o", "build/samolot.exe"
             ],
             "group": {
                 "kind": "build",
